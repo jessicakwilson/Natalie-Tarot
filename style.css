@@ -1,0 +1,51 @@
+#Prompt {
+    font: 32px "open-sans", sans-serif;
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.CardRow {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media(max-width: 1000px) {
+    .CardRow {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    .CardRow {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%
+    }
+}
+
+.Card {
+    aspect-ratio: 3 / 4;
+    margin: 10px;
+}
+
+.Card:hover, 
+.Card:focus {
+    box-shadow: 0 0 15px 2px #9ecaed;
+}
+
+.Card.selected {
+    box-shadow: 0 0 15px 2px #349aeb;
+}
+
+.ButtonContainer {
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#NextButton {
+    font: 16px "open-sans", sans-serif;
+}
