@@ -38,3 +38,16 @@ function OnCardClick(e) {
 cards.forEach(function (c) {
     c.onclick = OnCardClick;
 });
+
+
+var nextButton = document.getElementById("NextButton");
+nextButton.onclick = function() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+}
+
+var backButton = document.getElementById("BackButton");
+backButton.onclick = function() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
+}
