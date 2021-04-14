@@ -9,7 +9,7 @@
 .CardRow {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -27,17 +27,15 @@
 }
 
 .Card {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 9 / 16;
     margin: 10px;
+    background-image: url(images/back-cover.jpg);
+    background-size: 100% 100%;
 }
 
 .Card:hover, 
 .Card:focus {
-    box-shadow: 0 0 15px 2px #9ecaed;
-}
-
-.Card.selected {
-    box-shadow: 0 0 15px 2px #349aeb;
+    box-shadow: 0 0 15px 2px #93180C;
 }
 
 .ButtonContainer {
@@ -71,9 +69,10 @@ Button {
     margin: 0 auto;
 }
 
-.CardFront {
-    aspect-ratio: 3 / 4;
+#CardFront {
+    aspect-ratio: 9 / 16;
     margin: 10px;
+    background-size: 100% 100%;
 }
 
 #TextOverlay {
