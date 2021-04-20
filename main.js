@@ -1,37 +1,15 @@
-/*eslint-env browser*/
-
-/*global console*/
-/*eslint no-console: "off"*/
+/* load cards from json */
+var data;
+fetch("cards.json").then(
+    response => { 
+        return response.json();
+    }).then(
+        d => data = d);
 
 /* Random integer in range [0, max) */
 function randint(max) {
     return Math.floor(Math.random() * max);
 }
-
-var imageNames = [
-    "0-the-fool-2.0.jpg",
-    "1-the-magician-new.jpg",
-    "2-high-priestess-2.0.jpg",
-    "3-the-empress-final.jpg",
-    "4-emperor-4.0.jpg",
-    "5-hierophant-final3.jpg",
-    "6-the-lovers-1.0.jpg",
-    "7-the-chariot-3.2.jpg",
-    "8-strength.jpg",
-    "9-the-hermit-final.jpg",
-    "10-wheel-of-fortune-FINAL.jpg",
-    "11-justice-2.1.jpg",
-    "12-hanged-man-2.2.jpg",
-    "13-death-3.1.jpg",
-    "14-temperance-3.0-final.jpg",
-    "15-the-devil.jpg",
-    "16-the-tower-final.jpg",
-    "17-the-star-3.5.jpg",
-    "18-the-moon.jpg",
-    "19-the-sun-2.2-final.jpg",
-    "20-judgement-2.1.jpg",
-    "21-the-world-final.jpg"
-];
 
 var alreadySelectedCards = [];
 
@@ -68,21 +46,29 @@ function OnCardClick(e) {
     overlay.style.display = "block";
     
     var cardFront = document.getElementById("CardFront");
+    var cardTitle = document.getElementById("CardTitle");
+    var cardDesc = document.getElementById("CardDescription");
     
     // card was already selected
-    if (alreadySelectedCards[cardNum] !== undefined) {  
-        cardFront.style.backgroundImage = "url(" + "'images/" + alreadySelectedCards[cardNum] + "')";
-        card.style.backgroundImage = "url(" + "'images/" + alreadySelectedCards[cardNum] + "')";
+    if (alreadySelectedCards[cardNum] !== undefined) {
+        cardFront.style.backgroundImage = "url('" + alreadySelectedCards[cardNum].img + "')";
+        card.style.backgroundImage = "url('" + alreadySelectedCards[cardNum].img + "')";
+        
+        cardTitle.textContent = alreadySelectedCards[cardNum].title;
+        cardDesc.textContent = alreadySelectedCards[cardNum].description;
         return;
     }
     
     // randomly choose a card
-    var chosenCard = randint(imageNames.length);  
-    cardFront.style.backgroundImage = "url(" + "'images/" + imageNames[chosenCard] + "')";
-    card.style.backgroundImage = "url(" + "'images/" + imageNames[chosenCard] + "')";
+    var chosenCard = randint(data.length);
+    cardFront.style.backgroundImage = "url('" + data[chosenCard].img + "')";
+    card.style.backgroundImage = "url('" + data[chosenCard].img + "')";
     
-    alreadySelectedCards[cardNum] = imageNames[chosenCard];  // keep track of chosen cards
-    imageNames.splice(chosenCard, 1);  // remove card from options
+    cardTitle.textContent = data[chosenCard].title;
+    cardDesc.textContent = data[chosenCard].description;
+    
+    alreadySelectedCards[cardNum] = data[chosenCard];  // keep track of chosen cards
+    data.splice(chosenCard, 1);  // remove card from options
 }
 
 cards.forEach(function (c) {

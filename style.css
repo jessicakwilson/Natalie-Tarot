@@ -35,7 +35,7 @@
 
 .Card:hover, 
 .Card:focus {
-    box-shadow: 0 0 15px 2px #93180C;
+    box-shadow: 0 0 10px 4px #B68647;
 }
 
 .ButtonContainer {
@@ -81,14 +81,14 @@ Button {
     margin-bottom: 30px;
 }
 
-.CardTitle {
+#CardTitle {
     display: table;
     margin: 0 auto;
     margin-bottom: 30px;
     font: 48px "open-sans", sans-serif;
 }
 
-.CardDescription {
+#CardDescription {
     display: table;
     margin: 0 auto;
     font: 24px "open-sans", sans-serif;

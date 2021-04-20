@@ -1,0 +1,112 @@
+[
+    {
+        "title": "The Fool",
+        "img": "images/0-the-fool-2.0.jpg",
+        "description": "You’re about to start a new journey. Keep your eyes forward, no matter what challenges you take. Be ready to throw caution to the wind, and trust where the Universe is taking you."
+    },
+    {
+        "title": "The Magician",
+        "img": "images/1-the-magician-new.jpg",
+        "description": "It is time to manifest your goals. This means your path is certain and that you will manifest whatever it is you desire. Take it by the reigns and commit to these ideas."
+    },
+    {
+        "title": "The High Priestess",
+        "img": "images/2-high-priestess-2.0.jpg",
+        "description": "Look inside yourself, in this moment. Somewhere in there, you already know the answer. You already know what this means. Take this as your sign to balance your energy, and go with your gut."
+    },
+    {
+        "title": "The Empress",
+        "img": "images/3-the-empress-final.jpg",
+        "description": "There is something coming on the horizon. Walk barefoot through the grass and remember to feel connected to the Earth. Hear the breeze pass through the trees. Like the grass, you are growing too."
+    },
+    {
+        "title": "The Emperor",
+        "img": "images/4-emperor-4.0.jpg",
+        "description": "The rules and regulations you’ve set in place will lead the way. You work best in a leadership role; claim your authority as such. Stick to your plan until the end. It will work to your advantage and lead to others respecting you more."
+    },
+    {
+        "title": "The Hierophant",
+        "img": "images/5-hierophant-final3.jpg",
+        "description": "Now is the time to lean on someone you trust. Take advantage of someone who just wants to give advice. Remember to listen, to wait. Someone more wise then you will know the right way."
+    },
+    {
+        "title": "The Lovers",
+        "img": "images/6-the-lovers-1.0.jpg",
+        "description": "You’ve known for a while now that you are tied to someone within your soul. You will stick together no matter what. Even though you’ve probably already set your boundaries, make sure you’re clear about your beliefs and values. You build the unity from which love flows."
+    },
+    {
+        "title": "The Chariot",
+        "img": "images/7-the-chariot-3.2.jpg",
+        "description": "You know what it takes to get there, now all you have to do is start walking. Apply what you’ve learned so far to push past any obstacles that come your way. Remember you are doing this for you."
+    },
+    {
+        "title": "Strength",
+        "img": "images/8-strength.jpg",
+        "description": "Look inside yourself and you will remember where you are going. Don’t forget that you are in control, you are the one calling the shots. Acknowledge what you are afraid of but use this power to accomplish your goals. Like the lion, you are loyal and supportive of your inner circle. You are more powerful than you give yourself credit for."
+    },
+    {
+        "title": "The Hermit",
+        "img": "images/9-the-hermit-final.jpg",
+        "description": "You’re all alone in this tunnel, but that’s okay. It’s what you need right now. One foot in front of the other. In the distance is the light at the other end of that tunnel. When you get there, you will understand."
+    },
+    {
+        "title": "The Wheel of Fortune",
+        "img": "images/10-wheel-of-fortune-FINAL.jpg",
+        "description": "What you give will come back to you. There are some things outside of your control right now but remember: the only way out is through. This is critical."
+    },
+    {
+        "title": "Justice",
+        "img": "images/11-justice-2.1.jpg",
+        "description": "Be ready to face the ultimate judge. There is no bias here. Any decisions you are about to make will have major repercussions. Don’t forget to exhale. Remember to constantly be in search for the truth. Hold on to your beliefs."
+    },
+    {
+        "title": "The Hanged Man",
+        "img": "images/12-hanged-man-2.2.jpg",
+        "description": "Take a pause. What got you here, won’t get you there. Take a good look at your surroundings from a new perspective. This is a sign that you’re on overload or something you’re doing just isn’t working. It’s okay. Step back, analyze, reassess."
+    },
+    {
+        "title": "Death",
+        "img": "images/13-death-3.1.jpg",
+        "description": "Don’t fear the Reaper, this is good news. Death sits at the table, sipping a coffee, waiting for you. Become aware of your surroundings because change is coming. Remember, don’t resist. Take Death’s hand and move forward."
+    },
+    {
+        "title": "Temperance",
+        "img": "images/14-temperance-3.0-final.jpg",
+        "description": "Remember to go with the flow. Take a deep breath and feel the essence of the Universe. Blend with the tide. Everything is coming together and you’re at peace."
+    },
+    {
+        "title": "The Devil",
+        "img": "images/15-the-devil.jpg",
+        "description": "Why are you holding yourself back? You chose this route on purpose. Realize what you’re doing is a problem. Then, take a step back. It’s okay, as long as what you’re doing is safe. Is it safe?"
+    },
+    {
+        "title": "The Tower",
+        "img": "images/16-the-tower-final.jpg",
+        "description": "Change is coming. This will hit you like a freight train. You won’t know who to trust. Let the cookie crumble and after it’s in pieces, re-build and re-focus. Remember that change is necessary and beneficial. "
+    },
+    {
+        "title": "The Star",
+        "img": "images/17-the-star-3.5.jpg",
+        "description": "Imagine, after all this time, you realize that you are finally going in the right direction. A sense of clarity, and you feel like you have purpose again. Take a deep breath. Exhale. Remember the reason you are on this path. Look to the stars for hope."
+    },
+    {
+        "title": "The Moon",
+        "img": "images/18-the-moon.jpg",
+        "description": "The uncertainty of tomorrow reminds you of the anxiety of yesterday. Remember nothing is what it seems. Take the message from your recent dreams and meditate on them. It’s time to let go of your fears. Perhaps you need to face them head on."
+    },
+    {
+        "title": "The Sun",
+        "img": "images/19-the-sun-2.2-final.jpg",
+        "description": "Feel the beams of light touch your skin. You are radiating. You have been waiting for this for some time. Now you know for sure - it will work out. It always does."
+    },
+    {
+        "title": "Judgement",
+        "img": "images/20-judgement-2.1.jpg",
+        "description": "Remember who you were but don’t forget where you are now. The journey is just as important as the destination. This is your time to shine, despite the fork in the road ahead. The path you choose will be your destiny."
+    },
+    {
+        "title": "The World",
+        "img": "images/21-the-world-final.jpg",
+        "description": "This is it. The end, as we know it. But it’s a good ending. The circle of which this story was being told has come to a close. You’ve completed a goal that you’ve been trying to achieve, for a while now. Remember that good things come from endings. In reality, isn’t this just a new beginning?"
+    }
+]
