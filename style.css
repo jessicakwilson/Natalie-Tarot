@@ -9,21 +9,9 @@
 .CardRow {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
-}
-
-@media(max-width: 1000px) {
-    .CardRow {
-        width: 90%;
-    }
-}
-
-@media(max-width: 600px) {
-    .CardRow {
-        grid-template-columns: repeat(4, 1fr);
-        width: 100%
-    }
+    margin-bottom: 30px;
 }
 
 .Card {
@@ -65,13 +53,12 @@ Button {
 #CardOverlay {
     display: grid;
     grid-template-columns: auto;
-    width: 30%;
+    width: 225px;
     margin: 0 auto;
 }
 
 #CardFront {
     aspect-ratio: 9 / 16;
-    margin: 10px;
     background-size: 100% 100%;
 }
 
@@ -92,6 +79,41 @@ Button {
     display: table;
     margin: 0 auto;
     font: 24px "open-sans", sans-serif;
-    width: 50%;
+    width: 70%;
     text-align: center;
+}
+
+@media(max-width: 600px) {
+    .CardRow {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%
+    }
+    
+    #CardTitle {
+        font-size: 36px;
+    }
+    
+    #CardDescription {
+        font-size: 18px;
+        width: 85%;
+    }
+    
+    #overlay {
+        padding-top: 30px;
+    }
+    
+    #CardOverlay {
+        width: 200px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .CardRow {
+        width: 80%;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    #CardDescription {
+        width: 50%;
+    }
 }

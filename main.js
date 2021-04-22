@@ -44,6 +44,7 @@ function OnCardClick(e) {
     
     var overlay = document.getElementById("overlay");
     overlay.style.display = "block";
+    overlay.classList.add("clickToExit");
     
     var cardFront = document.getElementById("CardFront");
     var cardTitle = document.getElementById("CardTitle");
@@ -71,14 +72,36 @@ function OnCardClick(e) {
     data.splice(chosenCard, 1);  // remove card from options
 }
 
-cards.forEach(function (c) {
+cards.forEach(c => {
     c.onclick = OnCardClick;
 });
 
 function hideOverlay() {
     var overlay = document.getElementById("overlay");
     overlay.style.display = "none";
+    overlay.classList.remove("clickToExit");
+}
+
+var overlay = document.getElementById("overlay");
+overlay.onclick = function() {
+    if (overlay.classList.contains("clickToExit")) {
+        hideOverlay();
+    }
 }
 
 var backButton = document.getElementById("BackButton");
 backButton.onclick = hideOverlay;
+
+var resetButton = document.getElementById("ResetButton");
+resetButton.onclick = function() {
+    alreadySelectedCards.forEach(c => {
+        if (c !== undefined) {
+            data.push(c);
+        }
+    })
+    alreadySelectedCards = [];
+    
+    cards.forEach(c => {
+        c.style.backgroundImage = "url(images/back-cover.jpg)";
+    })
+}
